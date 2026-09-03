@@ -1,0 +1,4 @@
+<script setup>
+defineProps({ project: { type: Object, required: true } })
+</script>
+<template><RouterLink class="project-card" :to="`/projects/${project.id}`"><div class="card-image"><video v-if="project.video" :src="project.video" muted preload="metadata" aria-label="项目视频预览"></video><img v-else :src="project.cover" :alt="project.title" loading="lazy"><span v-if="project.award" class="award">{{ project.award }}</span></div><div class="card-body"><h3>{{ project.title }}</h3><p>{{ project.subtitle }}</p><div class="tag-row"><span v-for="tag in project.tags" :key="tag" class="tag">{{ tag }}</span></div></div></RouterLink></template>

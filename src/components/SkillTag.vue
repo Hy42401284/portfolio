@@ -1,0 +1,1 @@
+<template><span class="skill"><slot /></span></template>

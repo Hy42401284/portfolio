@@ -1,0 +1,1 @@
+<template><footer class="footer"><div class="container"><span>© 2026 黄艳 · 电子信息工程</span><span><a href="https://github.com/Hy42401284/portfolio" target="_blank" rel="noreferrer">GitHub ↗</a>　<a href="mailto:huangyan47@163.com">邮箱 ↗</a>　Built with ♥ using Codex</span></div></footer></template>

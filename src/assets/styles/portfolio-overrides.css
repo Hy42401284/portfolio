@@ -1,0 +1,52 @@
+:root { font-family: 'Inter', system-ui, sans-serif; color: #1e293b; background: #f8fafc; font-size: 18px; }
+body { background: #f8fafc; }
+.site-header { background: rgba(248,250,252,.78); backdrop-filter: blur(12px); }
+.logo strong { display: block; color: #2563eb; font-size: 1.45rem; line-height: 1; }
+.logo span { color: #64748b; font-size: .6rem; }
+.nav-links { font-size: 18px; }
+.nav-links a { position: relative; border-bottom: 0; }
+.nav-links a:after { content: ''; position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: #2563eb; transform: scaleX(0); transition: transform .25s ease; }
+.nav-links a:hover:after, .nav-links a.router-link-active:after { transform: scaleX(1); }
+.nav-links a.router-link-active { color: #2563eb; }
+.hero { background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 58%, #f5f3ff 100%); }
+.hero h1 em { background: linear-gradient(110deg, #2563eb, #7c3aed); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lede { font-size: 18px; }
+.btn { font-size: 18px; background: linear-gradient(110deg, #2563eb, #7c3aed); border: 0; }
+.btn.secondary { color: #2563eb; border: 1px solid #93c5fd; background: transparent; }
+.portrait-wrap { width: 120px; }
+.portrait-wrap:before { inset: -6px; border: 1px solid #93c5fd; border-radius: 50%; box-shadow: 0 8px 20px rgba(37,99,235,.12); }
+.portrait { width: 120px; height: 120px; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 8px 20px rgba(15,23,42,.16); }
+.skill { font-size: 16px; }
+.project-card, .info-card, .contact-form { border-radius: 20px; box-shadow: 0 4px 12px rgba(15,23,42,.09); }
+.project-card:hover { transform: translateY(-4px); box-shadow: 0 20px 36px rgba(15,23,42,.16); }
+.card-body p { font-size: 16px; }
+.card-body:after { content: '查看详情 →'; display: block; margin-top: 14px; color: #2563eb; font-size: 16px; opacity: 0; transform: translateY(4px); transition: opacity .2s, transform .2s; }
+.project-card:hover .card-body:after { opacity: 1; transform: translateY(0); }
+.tag { padding: 4px 9px; border-radius: 999px; color: #1d4ed8; background: #dbeafe; font-size: 14px; }
+.tag:before { content: ''; }
+.filter, .btn { min-height: 46px; }
+.muted, .star-card p { font-size: 18px; line-height: 1.9; }
+.star-card { border-radius: 14px; }
+.scroll-cue { display: block; width: 32px; margin: 34px auto 0; color: #2563eb; text-align: center; font-size: 2rem; animation: bounce 1.7s infinite; }
+.honor-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px; }
+.documents { margin: 60px 0; }.section-label { margin-bottom: 20px; }.section-label h2 { margin: 8px 0; }.document-card { overflow: hidden; margin: 18px 0; border-radius: 20px; background: #fff; box-shadow: 0 4px 12px rgba(15,23,42,.09); }.document-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 22px; }.document-heading h3 { font-size: 1.05rem; }.document-heading a { color: #2563eb; font-size: 16px; }.document-card iframe { display: block; width: 100%; height: 620px; border: 0; background: #eaf0f8; }
+.document-heading h3, .card-body h3 { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.archive-preview { display: flex; align-items: center; gap: 18px; padding: 28px 22px; color: #64748b; }.archive-preview p { flex: 1; margin: 0; }.archive-icon { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 14px; color: #fff; background: #2563eb; font-weight: 800; }
+.video-stage { margin: 34px 0 60px; }.video-stage .video { display: block; margin: 0; max-width: 100%; }.project-card .card-image { border-radius: 20px 20px 0 0; }
+.card-image video { display: block; width: 100%; height: 100%; object-fit: cover; background: #0f172a; }
+.external-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }.external-links .btn { min-height: 42px; padding: 9px 16px; font-size: 16px; }
+.publication-links { display: grid; gap: 12px; margin-top: 18px; }.publication-links a { color: #2563eb; line-height: 1.7; }
+.carousel-image.poster-project { height: min(760px, 72vw); }.carousel-image.poster-project img { object-fit: contain; }
+.carousel { position: relative; display: grid; grid-template-columns: 48px 1fr 48px; align-items: center; gap: 12px; margin: 34px 0 60px; }
+.carousel-image { grid-column: 2; overflow: hidden; width: 100%; height: min(600px, 58vw); padding: 0; border: 0; border-radius: 20px; background: #dbeafe; }
+.carousel-image img { width: 100%; height: 100%; object-fit: contain; }
+.carousel-arrow { width: 44px; height: 44px; border: 1px solid #bfdbfe; border-radius: 50%; color: #2563eb; background: #fff; font-size: 2rem; line-height: 1; }
+.carousel-dots { grid-column: 2; display: flex; justify-content: center; gap: 8px; }
+.carousel-dots button { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%; background: #bfdbfe; }.carousel-dots button.active { width: 22px; border-radius: 99px; background: #2563eb; }
+.honor-columns h3 { color: #2563eb; }
+.award-list { columns: 1; font-size: 16px; }
+.footer { background: #eaf0f8; }
+.page-fade-enter-active, .page-fade-leave-active { transition: opacity .22s ease, transform .22s ease; }.page-fade-enter-from { opacity: 0; transform: translateY(8px); }.page-fade-leave-to { opacity: 0; transform: translateY(-5px); }
+.project-card { animation: card-rise .55s ease both; }.project-card:nth-child(2) { animation-delay: .06s; }.project-card:nth-child(3) { animation-delay: .12s; }.project-card:nth-child(4) { animation-delay: .18s; }.project-card:nth-child(5) { animation-delay: .24s; }
+@keyframes card-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+@media (max-width: 640px) { :root { font-size: 16px; } .portrait-wrap { width: 80px; } .portrait { width: 80px; height: 80px; } .lede, .muted, .star-card p { font-size: 16px; } .card-body p { font-size: 14px; } .nav-links { font-size: 18px; } .honor-columns { grid-template-columns: 1fr; } .btn { font-size: 16px; } .carousel { grid-template-columns: 34px 1fr 34px; gap: 5px; }.carousel-arrow { width: 32px; height: 32px; font-size: 1.5rem; }.carousel-image { grid-column: 2; height: 68vw; border-radius: 12px; } }
