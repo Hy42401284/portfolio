@@ -5,11 +5,11 @@ import Lightbox from '../components/Lightbox.vue'
 const category = ref('全部'); const lightbox = ref('')
 const categories = ['全部', '四六级证书', '获奖证书']
 const certificates = [
-  { title: 'CET-4 英语四级证书', image: '/portfolio/images/certificates/CET4_202106_610091211113019_1.pdf', category: '四六级证书', pdf: true },
-  { title: 'CET-6 英语六级证书', image: '/portfolio/images/certificates/CET6_202112_610091212203114_1.pdf', category: '四六级证书', pdf: true },
+  { title: 'CET-4 英语四级证书', image: '/portfolio/images/certificates/CET4.jpg', category: '四六级证书' },
+  { title: 'CET-6 英语六级证书', image: '/portfolio/images/certificates/CET6.png', category: '四六级证书' },
   { title: '国家奖学金', image: '/portfolio/images/awards/国家奖学金.jpg', category: '获奖证书' },
-  { title: '华为杯研究生数学建模国家二等奖', image: '/portfolio/images/awards/华为杯研究生数学建模国家二等奖.pdf', category: '获奖证书', pdf: true },
-  { title: '亚太杯数学建模二等奖', image: '/portfolio/images/awards/亚太杯数学建模二等奖.pdf', category: '获奖证书', pdf: true },
+  { title: '华为杯研究生数学建模国家二等奖', image: '/portfolio/images/awards/award-huawei.jpg', category: '获奖证书' },
+  { title: '亚太杯数学建模二等奖', image: '/portfolio/images/awards/award-asia.jpg', category: '获奖证书' },
   { title: '信科赛国家二等奖', image: '/portfolio/images/awards/信科赛赛道一国家二等奖.jpg', category: '获奖证书' },
   { title: '信科赛省级二等奖', image: '/portfolio/images/awards/信科赛赛道三省级二等奖.jpg', category: '获奖证书' },
   { title: '大唐杯国家三等奖', image: '/portfolio/images/awards/大唐杯国家三等奖.jpg', category: '获奖证书' },
